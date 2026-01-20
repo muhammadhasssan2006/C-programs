@@ -41,23 +41,38 @@ int main()
 	// 		alpha++;
 	// 	}
 	// 	cout<<endl;
-	//  }
-	int n = 7;
-	char alpha = 90;
-	for (int i = n ; i >= 1; i--) q3m1a
+
+	// int n = 7;
+	// char alpha = 90;
+	// for (int i = n ; i >= 1; i--)
+	// {
+	// 	for (int j = 1; j <= n - i; j++)
+	// 	{
+	// 		cout << " ";
+	// 	}
+	// 	for (int k = 1; k <= i; k++)
+	// 	{
+	// 		if (alpha < 65)
+	// 			break;
+
+	// 		cout << alpha << " ";
+	// 		alpha--;
+	// 	}
+	// 	cout << endl;
+	// }
+
+	int n = 26;
+	for (int i = 1; i <= n; i++)
 	{
 		for (int j = 1; j <= n - i; j++)
 		{
 			cout << " ";
 		}
-		for (int k = 1; k <= i; k++)
+		for (char ch = 'A'; ch <= 'A' + i - 1; ch++)
 		{
-			if (alpha < 65)
-				break;
-
-			cout << alpha << " ";
-			alpha--;
+			cout << ch << " ";
 		}
+
 		cout << endl;
 	}
 }
